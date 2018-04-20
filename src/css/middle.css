@@ -1,0 +1,157 @@
+.CenterCol {
+    width: 100%;
+    padding: 0;
+    height: 90vh;
+    -webkit-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    -moz-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    z-index: 1;
+}
+
+.CenterColContent {
+    width: 100%;
+    height: 100%;
+}
+
+.CenterColInput {
+    z-index: 30;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height:9vh;
+    background-color: white;
+}
+
+.CenterColInputContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0px -15px 119px -42px rgba(175,176,225,1);
+    -moz-box-shadow: 0px -15px 119px -42px rgba(175,176,225,1);
+    box-shadow: 0px -15px 119px -42px rgba(175,176,225,1);
+}
+
+.CenterColInputContainer textarea {
+    margin: 0;
+    width: 80%;
+    font-size: 1rem;
+    height: inherit;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    background: none;
+    border: none;
+}
+
+.CenterColInputContainer button {
+    height: inherit;
+    width: 20%;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color:  #667aff;
+    border: none;
+}
+
+.CenterColInputContainer button:hover {
+    background-color:  white;
+}
+.CenterColInputContainer button:hover > .SendIcon {
+    color: #667aff !important;
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.SendIcon {
+    height: 35px !important;
+    width: 35px !important;
+    color: white !important;
+}
+
+.CenterColHeader {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 3vh 2.5vw;
+    -webkit-box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+    -moz-box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+    box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+}
+
+.CenterColHeader h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+.ChatIcon {
+    width: 58px !important;
+    height: 58px !important;
+}
+
+.leftBubble {
+    display: flex;
+    width: 100%;
+    left: 0;
+}
+
+.leftBubble img {
+    width: 20%;
+    margin: 5% 0 0 10%;
+    object-fit: cover;
+    border: none;
+    border-radius: 25px;
+    -webkit-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    -moz-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+}
+
+
+.leftBubble h3 {
+    width: 60%;
+    max-width:60%;
+    margin: 5%;
+    padding: 5%;
+    border: none;
+    -webkit-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    -moz-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    font-size: 1rem !important;
+    font-family: 'Poppins', sans-serif;
+}
+.rightBubble {
+    display: flex;
+    width: 100%;
+    right: 0;
+}
+
+.rightBubble img {
+    width: 20%;
+    margin: 5% 10% 0 0;
+    object-fit: cover;
+    border: none;
+    border-radius: 25px;
+    -webkit-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    -moz-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+}
+
+
+.rightBubble h3 {
+    width: 60%;
+    max-width:60%;
+    margin: 5%;
+    padding: 5%;
+    border: none;
+    -webkit-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    -moz-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    font-size: 1rem !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.MainChat {
+    overflow-y: overlay;
+    height: 70vh !important;
+}

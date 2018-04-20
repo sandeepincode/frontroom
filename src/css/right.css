@@ -1,0 +1,94 @@
+.CustomerCol {
+    background-color: #f4f5ff;
+    width: 100%;
+    padding: 0;
+    height: 90vh;
+}
+
+.ScrollY {
+    overflow-y: scroll !important;
+    height: 72vh !important;
+}
+
+.CustomerColMain {
+    height:auto;
+    padding-bottom: 2.5vh !important;
+}
+
+.CustomerColMainListItem {
+    font-family: 'Poppins', sans-serif !important;
+    padding: 0.5em 0px !important;
+}
+
+.CustomerColMainListItem:hover {
+    background-color: white !important;
+    -webkit-box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+    -moz-box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+    box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+}
+
+.CustomerColUpper {
+    z-index: 50;
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2.5vh 2.5vw;
+    -webkit-box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+    -moz-box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+    box-shadow: 0px 8px 56px 0px rgba(220,222,242,1);
+}
+
+.CustomerColUpper h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.CustomerColUpperLeft {
+    width: 20%;
+    margin: auto;
+}
+
+.CustomerColUpperRight {
+    width: 80%;
+    margin: auto;
+}
+
+.CustomerColLower {
+    /*z-index: 50;*/
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height:9vh;
+    background-color: white;
+}
+
+.CustomerColLowerContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0px -15px 119px -42px rgba(175,176,225,1);
+    -moz-box-shadow: 0px -15px 119px -42px rgba(175,176,225,1);
+    box-shadow: 0px -15px 119px -42px rgba(175,176,225,1);
+
+}
+
+.right {
+    width: 75% !important;
+    height: inherit !important;
+    font-size: 1.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.left {
+    width: 25% !important;
+    height: auto;
+}
+.SpreadWidth {
+    margin: auto;
+    width: 100%;
+    height: inherit;
+}

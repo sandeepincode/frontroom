@@ -1,0 +1,58 @@
+
+.ChatCol {
+    width: 100%;
+    padding: 0;
+    height: 90vh;
+    z-index: 20;
+    overflow: scroll;
+    background-color: #667aff;
+    -webkit-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    -moz-box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+    box-shadow: 9px 12px 61px 2px rgba(171,171,217,0.5) !important;
+}
+.ChatColUpper {
+    margin: 10vh 0 2.5vh 0;
+}
+
+.ChatColElm {
+    display: flex;
+    padding: 3vh 2.5vw;
+}
+
+.ChatColElm:hover {
+    background-color: white;
+}
+
+.ChatColElm:hover > .Change {
+    color: #667aff !important;
+}
+
+.ChatColElm .Change{
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+}
+
+.ChatColElm h3 {
+    margin: auto auto auto 20px;
+    font-size: 1.5rem;
+}
+
+.m0{
+    margin: 0 !important;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.Icon {
+    height: 35px !important;
+    width: 35px !important;
+}
+
+.ChatColLower {
+    bottom: 0;
+    width: 100%;
+    background-color: #5a6ce4;
+    position: absolute;
+}
