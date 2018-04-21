@@ -1,0 +1,28 @@
+{
+  "auth": false,
+  "username": "John Doe",
+  "chatting": "Samantha",
+  "connections": [
+    {
+      "name": "Samantha",
+      "status": 1,
+      "img": "https://avatars2.githubusercontent.com/u/175163?s=400&v=4",
+      "date": "10:34 21st April"
+    },
+    {
+      "name": "David",
+      "status": 0,
+      "img": "https://avatars2.githubusercontent.com/u/175163?s=400&v=4",
+      "date": "08:58 21st April"
+    },
+    {
+      "name": "Lucy",
+      "status": 0,
+      "img": "https://avatars2.githubusercontent.com/u/175163?s=400&v=4",
+      "date": "08:23 21st April"
+    }
+  ],
+  "chat": [],
+  "messageQuery": "",
+  "searchQuery": ""
+}

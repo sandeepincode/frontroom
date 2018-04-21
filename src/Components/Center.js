@@ -44,11 +44,11 @@ export default class Center extends Component {
         <div className="CenterColContent">
 
           <div className="CenterColHeader">
-            <input value={this.props.username}
-                   disabled="true"
-                   onChange={(e)=> {this.props.handleInput(e, 'username')}}
-                   type="text"/>
-            {/*<h3>{this.props.username}</h3>*/}
+            {/*<input value={this.props.chatting}*/}
+                   {/*disabled="true"*/}
+                   {/*onChange={(e)=> {this.props.handleInput(e, 'username')}}*/}
+                   {/*type="text"/>*/}
+            <h3>{this.props.chatting}</h3>
           </div>
 
           <div className="MainChat SpreadWidth">
