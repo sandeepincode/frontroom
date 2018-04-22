@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Col } from 'reactstrap';
+import React, {Component} from 'react';
+import {Col} from 'reactstrap';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import CommunicationChat from 'material-ui/svg-icons/communication/chat'
 import ActionSettings from 'material-ui/svg-icons/action/settings';

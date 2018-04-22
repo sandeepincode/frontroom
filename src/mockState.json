@@ -1,6 +1,6 @@
 {
   "auth": false,
-  "username": "John Doe",
+  "username": "John",
   "chatting": "Samantha",
   "connections": [
     {
@@ -22,7 +22,48 @@
       "date": "08:23 21st April"
     }
   ],
-  "chat": [],
+  "chat": [
+    {
+      "username": "John",
+      "sendTo": "Samantha",
+      "messageQuery": "Hi Sam"
+    },
+    {
+      "username": "Samantha",
+      "sendTo": "John",
+      "messageQuery": "Hey John"
+    },
+    {
+      "username": "John",
+      "sendTo": "David",
+      "messageQuery": "Hi David"
+    },
+    {
+      "username": "John",
+      "sendTo": "Samantha",
+      "messageQuery": "How you doing Sam?"
+    },
+    {
+      "username": "Samantha",
+      "sendTo": "John",
+      "messageQuery": "I've been great! xoxo"
+    },
+    {
+      "username": "Samantha",
+      "sendTo": "John",
+      "messageQuery": "What have you been up to?"
+    },
+    {
+      "username": "John",
+      "sendTo": "David",
+      "messageQuery": "Can you help me with this thing?!"
+    },
+    {
+      "username": "Lucy",
+      "sendTo": "John",
+      "messageQuery": "Smell my nan XD"
+    }
+  ],
   "messageQuery": "",
   "searchQuery": ""
 }

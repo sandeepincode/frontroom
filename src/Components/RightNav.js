@@ -3,7 +3,6 @@ import {Col} from 'reactstrap';
 import {List, ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import _ from 'lodash';
-import ActionInfo from 'material-ui/svg-icons/action/info';
 import StatusCircle from 'material-ui/svg-icons/action/check-circle';
 import ConnectionsIcon from 'material-ui/svg-icons/social/people';
 import SearchIcon from 'material-ui/svg-icons/action/search';
@@ -20,7 +19,9 @@ export default class RightNav extends Component {
           components.push((
             <ListItem
               value={c.name}
-              onClick={this.props.handleSelect}
+              onClick={(e) => {
+                this.props.handleSelect(e, c.name);
+              }}
               className="CustomerColMainListItem"
               leftAvatar={<Avatar src={c.img}/>}
               rightIcon={<StatusCircle color={c.status ? 'springgreen' : 'red'}/>}
@@ -33,7 +34,9 @@ export default class RightNav extends Component {
             <ListItem
               className="CustomerColMainListItem"
               value={c.name}
-              onClick={this.props.handleSelect}
+              onClick={(e) => {
+                this.props.handleSelect(e, c.name);
+              }}
               leftAvatar={<Avatar src={c.img}/>}
               rightIcon={<StatusCircle color={c.status ? 'springgreen' : 'red'}/>}
               primaryText={c.name}

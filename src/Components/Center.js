@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import { Col } from 'reactstrap';
+import React, {Component} from 'react';
+import {Col} from 'reactstrap';
 import _ from 'lodash'
 import SendIcon from 'material-ui/svg-icons/content/send';
 
 export default class Center extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
+
   render() {
     const chatComponents = [];
     if (!_.isEmpty(this.props.chatLog)) {
       this.props.chatLog.map((c) => {
-        if( c.username === this.props.username ) {
+
+        if (c.username === this.props.username && c.sendTo === this.props.chatting) {
           chatComponents.push((
             <div>
               <div className="rightBubble">
@@ -19,11 +21,12 @@ export default class Center extends Component {
                   <p>Me:</p>
                   {c.messageQuery}
                 </h3>
-                <img className="ChatIcon" src="https://static.designmynight.com/uploads/2017/08/drephoto-optimised.jpg"/>
+                <img className="ChatIcon"
+                     src="https://static.designmynight.com/uploads/2017/08/drephoto-optimised.jpg"/>
               </div>
             </div>
           ));
-        } else {
+        } else if (c.username === this.props.chatting) {
           chatComponents.push((
             <div>
               <div className="leftBubble">
@@ -36,7 +39,7 @@ export default class Center extends Component {
             </div>
           ));
         }
-      })
+      });
     }
 
     return (
@@ -45,9 +48,9 @@ export default class Center extends Component {
 
           <div className="CenterColHeader">
             {/*<input value={this.props.chatting}*/}
-                   {/*disabled="true"*/}
-                   {/*onChange={(e)=> {this.props.handleInput(e, 'username')}}*/}
-                   {/*type="text"/>*/}
+            {/*disabled="true"*/}
+            {/*onChange={(e)=> {this.props.handleInput(e, 'username')}}*/}
+            {/*type="text"/>*/}
             <h3>{this.props.chatting}</h3>
           </div>
 
@@ -59,7 +62,9 @@ export default class Center extends Component {
             <div className="CenterColInputContainer">
                         <textarea
                           onKeyPress={(e) => e.key === "Enter" ? this.props.sendMessage(e) : null}
-                          onChange={(e)=> {this.props.handleInput(e, 'messageQuery')}}
+                          onChange={(e) => {
+                            this.props.handleInput(e, 'messageQuery')
+                          }}
                           rows="6"
                           cols="50"
                           value={this.props.messageQuery}
