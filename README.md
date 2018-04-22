@@ -16,4 +16,4 @@ Sandeepincode
 
 # Preview
 
-![Alt text](/preview .png?raw=true "Title")
+![Alt text](/preview.png?raw=true "Title")
